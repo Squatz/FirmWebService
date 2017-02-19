@@ -1,0 +1,57 @@
+<div>
+  <ul>
+  <label class="right">Existing Firms:</label>
+      <pre><%= @firms %></pre>      
+  </ul>
+</div>
+
+<div>
+
+  <form method = "post" action="/">
+    <div class="row">
+      <div class="small-8">
+        <div class="row">
+          <div class="small-2 columns">
+            <label for="Firm" class="right">Add a Firm</label>
+          </div>
+          <div class="small-6 columns">
+            <input type="text" name="firmName" id="firmName" placeholder="Firm Name"/>
+            <input type="text" name="cvr" id="cvr" placeholder="CVR"/>
+            <input type="text" name="adress" id="adress" placeholder="Adress"/>
+            <input type="text" name="city" id="city" placeholder="City"/>
+            <input type="text" name="country" id="country" placeholder="Country"/>
+            <input type="text" name="phone" id="phone" placeholder="Phone(optional)"/>
+          </div>
+          <div class="medium-4 small-12 columns">
+            <input type = "submit" value="submit" class="button">
+          </div>
+        </div>
+      </div>
+      <div>
+
+      </div>
+    </div>
+  </form>
+
+  <form method = "post" action="/search">
+    <div class="row">
+      <div class="small-8">
+        <div class="row">
+          <div class="small-2 columns">
+            <label for="Search" class="right">Search for a Firm</label>
+          </div>
+          <div class="small-6 columns">
+            <input type="text" name="search" id="search" placeholder="Firm Name"/>
+          </div>
+          <div class="medium-4 small-12 columns">
+            <input type = "submit" value="submit" class="button">
+          </div>
+          <pre><%= @firmInfo %></pre>
+        </div>
+      </div>
+      <div>
+
+      </div>
+    </div>
+  </form>
+</div>
